@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu desplegable</title>
+    <style>
+         :root{
+            --white: #ffffff;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        .desktop-menu{
+            width: 100px;
+            height: auto;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 6px;
+            padding: 20px 20 px 0 20px;
+        }
+        .desktop-menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .desktop-menu ul li{
+            text-align: end;
+        }
+
+        .desktop-menu ul li:not(:last-child){
+            font-weight: bold;
+        }
+        .desktop-menu ul li:last-child{
+            padding-top: 20px;
+            border-top: 1px solid var(--very-light-pink);
+        }
+
+        .desktop-menu ul li:last-child a{
+            color: var(--hospital-green);
+            font-size: var(--sm);
+        }
+
+        .desktop-menu ul li a{
+            color: var(--black);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop-menu">
+        <ul>
+            <li>
+                <a href="/" class="title">My orders</a>
+            </li>
+
+            <li>
+                <a href="/">My account</a>
+            </li>
+
+            <li>
+                <a href="/">Sign out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
